@@ -13,6 +13,11 @@ app.post("/submit", (req, res) => {
 });
 
 
+app.get('/',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public','form.html'))
+})
+
+
 app.listen(PORT, () => {
   console.log(`server is running at http://localhost:3000`);``
 });
